@@ -108,9 +108,9 @@ export default function Page() {
                         <Testimonials list={testimonial?.list || []} />
                     </section>
 
-                    <section aria-labelledby="how-we-work-heading">
+                    {/* <section aria-labelledby="how-we-work-heading">
                         <HowWeWork />
-                    </section>
+                    </section> */}
 
                     <section aria-labelledby="faq-heading">
                         <FaqSection faqs={faqs} />

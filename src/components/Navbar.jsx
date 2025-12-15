@@ -34,9 +34,9 @@ export default function Navbar() {
                 <Image
                     src="/logo.svg"
                     alt="Logo"
-                    height={60}
-                    width={144.5}
-                    className=""
+                    height={40}
+                    width={121}
+                    className="h-10 md:h-[50px] lg:h-[60px] w-fit"
                 />
             </Link>
 
@@ -200,9 +200,8 @@ export default function Navbar() {
                             href="/contact-us"
                             variant="secondary"
                             onClick={closeMenu}
-
                             as="link"
-                            className=" block  text-center"
+                            className="w-full "
                         >
                             Contact us
                         </Button>

@@ -42,9 +42,10 @@ export const footerItem = [
     {
         item: "Social Media Links",
         subItem: [
-            { label: "Instagram", link: "https://instagram.com" },
-            { label: "LinkedIn", link: "https://linkedin.com" },
-            { label: "X (Twitter)", link: "https://twitter.com" },
+            { label: "Instagram", link: "https://www.instagram.com/arshiv_legal?igsh=bTZnM3BiMW1iZzJv" },
+            { label: "LinkedIn", link: "https://www.linkedin.com/in/aryan-pandey-242674387?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BvzAH4IdURSqa23J5vK8vgg%3D%3D" },
+            { label: "Facebook", link: "https://www.facebook.com/share/17pQZ3Jy39/" },
+            { label: "YouTube", link: "https://youtube.com/@arshiv_legal?si=yEfJJ9M4W3L0vz1T" },
         ],
     },
 
@@ -56,8 +57,8 @@ export const footerItem = [
                 link: "mailto: contact@arshivlegal.com",
             },
             {
-                label: "Phone: +91 XXXXXXXX456",
-                link: "tel:+919999999456",
+                label: "Phone: +91 8853632011",
+                link: "tel:+918853632011",
             },
         ],
     },

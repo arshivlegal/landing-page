@@ -10,7 +10,7 @@ import Button from "./ui/Button";
  */
 export default function DisclaimerGate({
     storage = "local",
-    expirySeconds = 5, // expires after 2 seconds by default
+    expirySeconds = 3600, // expires after 2 seconds by default
 }) {
     const [visible, setVisible] = useState(false);
     const key = "disclaimerAccepted";
@@ -92,7 +92,7 @@ export default function DisclaimerGate({
 
     return (
         <div
-            className="fixed inset-0 z-[99999] flex items-end justify-center"
+            className="fixed inset-0 z-99999 flex items-end justify-center"
             aria-modal="true"
             role="dialog"
             aria-labelledby="disclaimer-title"

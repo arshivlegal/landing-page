@@ -82,7 +82,7 @@
             ],
             "civilLaw": {
                 "title": "Civil Law",
-                "image": "/Images/Title.png",
+                "image": "/Images/civil-law.webp",
                 "description": "Civil law covers disputes between individuals, families, or organisations. It includes conflicts involving money, contracts, consumer issues, reputation, workplace matters, and everyday disagreements that require legal clarification or resolution through civil procedures.",
                 "subTitle": "Below are the key civil matters this section covers:",
                 "keyMatters": [
@@ -92,7 +92,7 @@
             },
             "criminalLaw": {
                 "title": "Criminal Law",
-                "image": "/Images/law-criminal.png",
+                "image": "/Images/criminal-law.webp",
                 "description": "Criminal law deals with offences that involve accusations of wrongdoing, harm, threats, or violations of public order. It includes matters related to police complaints, FIRs, fraud, violence, cyber offences, and conduct treated as criminal under law.",
                 "subTitle": "Below are the primary criminal concerns covered under this category:",
                 "keyMatters": [
@@ -104,7 +104,7 @@
             },
             "administrativeLaw": {
                 "title": "Administrative Law",
-                "image": "/Images/law-administrative.png",
+                "image": "/Images/administrative-law.webp",
                 "description": "Administrative law covers disputes and issues arising from actions, decisions, or notices issued by government departments or authorities. It includes challenges to official orders, penalties, licensing problems, and matters involving public administrative bodies.",
                 "subTitle": "Below are the administrative matters that fall under this service:",
                 "keyMatters": [
@@ -116,7 +116,7 @@
             },
             "publicLaw": {
                 "title": "Public Law",
-                "image": "/Images/Title.png",
+                "image": "/Images/public-law.webp",
                 "description": "Public law addresses situations where state authorities, public officials, or government bodies affect individual rights. It includes cases involving misuse of power, unlawful administrative actions, and matters requiring accountability from public institutions.",
                 "subTitle": "Below are the core constitutional matters included under this category:",
                 "keyMatters": [
@@ -128,7 +128,7 @@
             },
             "constitutionalLaw": {
                 "title": "Constitutional Law",
-                "image": "/Images/law-constitutional.png",
+                "image": "/Images/constitutional-law.webp",
                 "description": "Constitutional law involves issues relating to fundamental rights and the legality of governmental actions. It covers challenges to government orders, enforcement of constitutional protections, and matters requiring judicial review of state decisions.",
                 "subTitle": "Below are the core constitutional matters included under this category:",
                 "keyMatters": [
@@ -140,7 +140,7 @@
             },
             "propertyLaw": {
                 "title": "Property Law",
-                "image": "/Images/Title.png",
+                "image": "/Images/property-law.webp",
                 "description": "Property law deals with rights, ownership, possession, and use of land or buildings. It includes disputes over boundaries, tenancy, transfers, inheritance, encroachment, and any conflict involving residential, commercial, or ancestral property.",
                 "subTitle": "Below are the main property-related issues included in this service:",
                 "keyMatters": [
@@ -892,13 +892,8 @@
         },
         "teamMember": [
             {
-                "dpImage": "/Images/dp.png",
+                "dpImage": "/Images/aryan.png",
                 "heading": "Aryan Pandey — Principal Legal Professional",
-                "content": "As the primary face of Arshiv Legal, he oversees the evaluation of matters, examines factual positions, and interprets the legal questions involved with precision. His approach is grounded in structured reasoning and clarity, ensuring clients receive guidance that is both practical and aligned with the law. He works closely with the internal workflow that manages background preparation, document accuracy, procedural checks, and communication with external advocates whenever deeper intervention is needed."
-            },
-            {
-                "dpImage": "/Images/dp.png",
-                "heading": "shiv — Principal Legal Professional",
                 "content": "As the primary face of Arshiv Legal, he oversees the evaluation of matters, examines factual positions, and interprets the legal questions involved with precision. His approach is grounded in structured reasoning and clarity, ensuring clients receive guidance that is both practical and aligned with the law. He works closely with the internal workflow that manages background preparation, document accuracy, procedural checks, and communication with external advocates whenever deeper intervention is needed."
             }
         ],
@@ -907,8 +902,8 @@
             "content": "While clients interact primarily with the principal professional, the overall system is designed to function like a coordinated legal setup. Background work supports the front-end guidance, ensuring that matters are reviewed properly, facts are verified, and procedural steps are prepared without rush or ambiguity. This allows Arshiv Legal to maintain both accuracy and efficiency, even in time-sensitive situations."
         },
         "section4": {
-            "heading": "Why Clients Trust Us",
-            "content": "Our focus remains on clear communication, sound legal understanding, and responsible guidance. We avoid unnecessary jargon, provide straightforward explanations, and ensure that every step suggested is safe, lawful, and grounded in proper reasoning. Clients appreciate the calm, structured, and reliable manner in which their concerns are handled."
+            "heading": "Resolved Cases & Experiences",
+            "content": "*An outline of legal matters we have handled, supported by client feedback."
         }
     },
     "contactSection": {
@@ -1201,7 +1196,7 @@
     },
     "termsAndConditions": {
         "title": "Terms & Conditions",
-        "effectiveDate": "[Insert Date]",
+        "effectiveDate": "November 2025",
         "website": "www.arshivlegal.com",
         "entity": "Arshiv Legal",
         "sections": [
@@ -1301,34 +1296,22 @@
         "title": "What Clients Say",
         "list": [
             {
-                "name": "Ayush Saini",
-                "text": "This website is intended solely for general informational purposes about our law firm and the legal services we offer. The information provided here should not be construed as formal legal advice, nor does it create an attorney-client relationship.",
+                "name": "Jaspreet Singh",
+                "text": "When I received a legal notice, I was quite confused and anxious. Reaching out to Arshiv Legal helped calm things down. They explained the situation clearly and helped me understand what actually mattered, which made the next steps much easier to handle",
                 "rating": 5,
-                "image": "/Images/user.png"
+                "image": "/Images/client-3.webp"
             },
             {
-                "name": "Saksham Pandey",
-                "text": "This website is intended solely for general informational purposes about our law firm and the legal services we offer. The information provided here should not be construed as formal legal advice, nor does it create an attorney-client relationship.",
-                "rating": 3,
-                "image": "/Images/blog.png"
-            },
-            {
-                "name": "Client Name",
-                "text": "This website is intended solely for general informational purposes about our law firm and the legal services we offer. The information provided here should not be construed as formal legal advice, nor does it create an attorney-client relationship.",
-                "rating": 4,
-                "image": "/Images/user.png"
-            },
-            {
-                "name": "Abhijeet Dwivedi",
-                "text": "This website is intended solely for general informational purposes about our law firm and the legal services we offer. The information provided here should not be construed as formal legal advice, nor does it create an attorney-client relationship.",
+                "name": "Himanshu Shukla",
+                "text": "Guidance was sought to determine whether the matter required formal legal action. Arshiv Legal assessed the situation objectively, explained the legal position with clarity, and outlined the available options without pressure. The consultation brought reassurance and a clear direction for proceeding responsibly.",
                 "rating": 5,
-                "image": "/Images/user.png"
+                "image": "/Images/client-1.webp"
             },
             {
-                "name": "Client Name",
-                "text": "This website is intended solely for general informational purposes about our law firm and the legal services we offer. The information provided here should not be construed as formal legal advice, nor does it create an attorney-client relationship.",
-                "rating": 4,
-                "image": "/Images/user.png"
+                "name": "Raunak Gupta",
+                "text": "I reached out to Arshiv Legal for help with reviewing some documents. The guidance was thoughtful and easy to follow. It felt good to have someone explain things properly instead of making it sound complicated or intimidating.",
+                "rating": 5,
+                "image": "/Images/client-2.webp"
             }
         ]
     }

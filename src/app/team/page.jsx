@@ -1,15 +1,16 @@
 import Gradient from '@/components/ui/Gradient'
-import Image from 'next/image';
 import Data from '@/Data/data.json'
 import GetInTouch from '@/components/GetInTouch';
 import TeamCard from '@/components/teamCard';
+import Testimonials from '@/components/Testimonials';
 const { pageTitle, description, section1, teamMember, section3, section4 } = Data.ourTeam;
+const testimonial = Data?.testimonials || [];
 function page() {
     return (
         <>
             <Gradient title={pageTitle} description={description} />
             <div className='w-full max-w-7xl mx-auto px-s16 md:px-s32 space-y-s40 md:space-y-s48 lg:space-y-s64'>
-                <div>
+                <div className='space-y-s24'>
                     <h2 className='page-title-h2 text-accent-main'>{section1.heading}</h2>
                     <p className='body-large'>{section1.content}</p>
                 </div>
@@ -26,13 +27,14 @@ function page() {
                     ))}
                 </div>
 
-                <div>
+                <div className='space-y-s24'>
                     <h2 className='page-title-h2 text-accent-main'>{section3.heading}</h2>
                     <p className='body-large'>{section3.content}</p>
                 </div>
-                <div>
+                <div className='space-y-s24'>
                     <h2 className='page-title-h2 text-accent-main'>{section4.heading}</h2>
-                    <p className='body-large'>{section4.content}</p>
+                    <Testimonials list={testimonial?.list || []} />
+                    <p className="text-center body-small text-disable">{section4.content}</p>
                 </div>
                 <GetInTouch
                     variant="white"
