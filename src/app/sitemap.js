@@ -2,8 +2,7 @@ import { SEO_CONFIG } from '@/lib/seo-config';
 
 export default async function sitemap() {
     const baseUrl = SEO_CONFIG.siteUrl.replace(/\/$/, '');
-
-    const encode = (path) => encodeURI(`${baseUrl}${path}`);
+    const safeUrl = (path) => `${baseUrl}${path}`.replace(/&/g, '%26');
 
     const coreRoutes = [
         '',
@@ -17,7 +16,7 @@ export default async function sitemap() {
         '/privacy-policy',
         '/terms-&-conditions',
     ].map((route) => ({
-        url: encode(route),
+        url: safeUrl(route),
         lastModified: new Date(),
         changeFrequency: route === '' ? 'daily' : 'monthly',
         priority: route === '' ? 1.0 : 0.8,
@@ -37,7 +36,7 @@ export default async function sitemap() {
         '/services/rights-violation-complaints',
         '/services/writ-petitions',
     ].map((route) => ({
-        url: encode(route),
+        url: safeUrl(route),
         lastModified: new Date(),
         changeFrequency: 'weekly',
         priority: 0.9,
@@ -55,7 +54,7 @@ export default async function sitemap() {
             const blogs = json.data?.blogs || [];
 
             blogRoutes = blogs.map((post) => ({
-                url: encode(`/blog/${post._id}`),
+                url: safeUrl(`/blog/${post._id}`),
                 lastModified: new Date(post.updatedAt || post.createdAt),
                 changeFrequency: 'weekly',
                 priority: 0.7,
