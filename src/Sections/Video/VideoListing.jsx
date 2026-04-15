@@ -407,7 +407,7 @@ export default function VideoListingPage({ searchQuery = "", onClearSearch }) {
   // RENDER
   // ============================================
   return (
-    <main className="w-full">
+    <main className="w-full max-w-8xl mx-auto">
       {/* ERROR STATE */}
       {error && (
         <div className="bg-red-50 border border-red-200 rounded p-4 mb-4">

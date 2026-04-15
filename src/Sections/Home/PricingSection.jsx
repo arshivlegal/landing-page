@@ -11,7 +11,7 @@ export default function PricingSection() {
         <div className="flex flex-col gap-s48 lg:gap-s64">
             {/* Heading */}
            <div>
-             <h2 className="heading-h3 text-primary-main">
+             <h2 className="heading-h3 max-w-2xl text-primary-main">
                 {data.title}
             </h2>
             <p className="mt-s24 heading-h6 text-secondary">

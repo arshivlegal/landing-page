@@ -11,7 +11,7 @@ export default function PrivacyPolicy() {
     const { title, lastUpdated, introBlock, notice, sections, Note } = privacyPolicy;
 
     return (
-        <main className="w-full py-s40 lg:py-s64">
+        <main className="w-full py-[100px] md:py-[150px] lg:md:py-[150px]">
             <section className="max-w-5xl mx-auto px-s16 md:px-s32 space-y-s40 lg:space-y-s64">
 
                 {/* TITLE */}

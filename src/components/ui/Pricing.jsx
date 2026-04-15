@@ -1,6 +1,7 @@
 "use client";
 
 import Button from "@/components/ui/Button";
+import { useRouter } from "next/navigation";
 
 export default function PricingCard({
     title,
@@ -11,7 +12,7 @@ export default function PricingCard({
     variant = "free",
 }) {
     const isStandard = variant === "standard";
-
+const router = useRouter();
     return (
         <div
             className={`max-w-[350px] min-h-[350px] rounded-r16 p-s16 md:p-s24 flex flex-col gap-s16 transition-all duration-300 shadow-lg
@@ -68,7 +69,11 @@ export default function PricingCard({
                     variant={isStandard ? "primary" : "secondary"}
                     className="w-full"
                     as="link"
-                    href="/contact-us"
+
+  onClick={() => {
+          router.push("/contact-us?scroll=contact");
+        }}
+                  
                 >
                     {buttonText}
                 </Button>

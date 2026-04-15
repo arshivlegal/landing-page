@@ -177,7 +177,7 @@
     },
     "pricingSection": {
         "title":"Consultancy Charges",
-        "subtitle":"Our approach is built on clarity, precision, and genuine understanding.",
+        "subtitle":"Fair and transparent pricing that respects your time, concerns, and legal needs.",
         "footerNote": "⁠*All consultations are handled by qualified legal professionals. Fees vary based on complexity and time, ensuring fairness and transparency.",
         "pricing": [
             {
@@ -191,7 +191,7 @@
             {
                 "title": "Standard",
                 "star": "",
-                "price": "₹0 | Paid | Fees vary by case",
+                "price": "Paid | Fees vary by case",
                 "details": "A focused session for those who need more than a brief opinion — get practical legal guidance based on your facts, documents, and situation.\nPricing depends on case type, lawyer’s experience, and time required.\n\nTransparent and fairly assessed before your session.",
                 "buttonText": "Choose",
                 "variant": "standard"

@@ -13,14 +13,14 @@ export default function TermsOfUse() {
         termsOfUse;
 
     return (
-        <main className="w-full bg-background text-main py-s40 /lg:py-s64">
+        <main className="w-full bg-background text-main py-[100px] md:py-[150px] lg:py-[200px]">
             <section className="max-w-5xl mx-auto px-s16 md:px-s32 space-y-s40 lg:space-y-s64">
 
                 {/* TITLE */}
-                <h1 className="hero-h1 text-primary-main">{title}</h1>
+                <h1 className="heading-h1 text-primary-main">{title}</h1>
 
                 {/* BASIC INFO */}
-                <div className="body-large text-secondary">
+                <div className="heading-h6 text-secondary">
                     <p>
                         <span className="font-semibold text-main">Effective Date:</span>{" "}
                         {effectiveDate}
@@ -41,11 +41,11 @@ export default function TermsOfUse() {
                     <div key={index} className="space-y-s24">
 
                         {/* SECTION TITLE */}
-                        <h2 className="subheading-h3">{section.title}</h2>
+                        <h2 className="heading-h3">{section.title}</h2>
 
                         {/* PART1 + LINK + PART2 */}
                         {(section.part1 || section.link) && (
-                            <p className="body-large">
+                            <p className="body-default">
                                 {section.part1 && <>{section.part1}</>}
                                 {section.link && (
                                     <Link
@@ -61,7 +61,7 @@ export default function TermsOfUse() {
 
                         {/* CONTENT BLOCK */}
                         {section.content && (
-                            <div className="space-y-s12 body-large">
+                            <div className="space-y-s12 body-default">
                                 {section.content.map((item, i) =>
                                     Array.isArray(item) ? (
                                         <ul key={i} className="list-disc pl-s24 space-y-s8">
@@ -78,12 +78,12 @@ export default function TermsOfUse() {
 
                         {/* COLORED SINGLE ACCENT LINE */}
                         {section.colored && (
-                            <span className="body-large text-accent-main">{section.colored}</span>
+                            <span className="body-default text-accent-main">{section.colored}</span>
                         )}
 
                         {/* LINK1 + part1 + link2 + part2 */}
                         {section.placeholder1 && (
-                            <p className="body-large">
+                            <p className="body-default">
                                 {section.part10}
                                 <Link
                                     href={section.link1|| "#"}

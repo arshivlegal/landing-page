@@ -11,7 +11,7 @@ const MODAL_DURATION = 450;
 
 export default function CaseStudy() {
   const { caseStudies } = Data.servicesSection;
-  const description = "Our approach is built on clarity, precision, and genuine understanding.";
+  const description = "Clear legal insight to resolve complex property disputes with structured guidance.";
 
   const [open, setOpen] = useState(false);
   const [activeCase, setActiveCase] = useState(null);
@@ -59,27 +59,30 @@ export default function CaseStudy() {
               View case study
             </Button>
           </div>
-          <div className="w-full bg-gradient-to-t h-[250px] md:h-[600px] from-secondary-main to-background rounded-r16 px-s16  md:px-s64 pt-s64 flex justify-center hover:cursor-pointer"
-            onClick={() => handleOpen(caseStudies[0])}
-          >
-            <Image
-              src={caseStudies[0].image}
-              alt="Case study"
-              width={520}
-              height={70}
-              className="object-cover object-top"
-            />
-          </div>
+     <div
+  className="w-full bg-gradient-to-t h-[250px] md:h-[600px] from-secondary-main to-background rounded-r16 px-s16 md:px-s64 pt-s64 flex justify-center cursor-pointer group overflow-hidden"
+  onClick={() => handleOpen(caseStudies[0])}
+>
+  
+    <Image
+      src={caseStudies[0].image}
+      alt="Case study"
+      width={520}
+      height={70}
+      className="object-cover object-top transition-transform duration-300 ease-out group-hover:-translate-y-2"
+    />
+  
+</div>
 
         </div>
 
         {/* CASE 2 */}
         <div className="flex flex-col max-w-5xl lg:flex-row items-center justify-center gap-s32 text-center">
           <p className="heading-h6 text-secondary max-w-sm lg:text-left ">
-            {description}
+            Strategic legal support to handle false allegations with clarity and confidence. 
           </p>
 
-          <div className="flex flex-col items-center gap-s32 px-s32 hover:cursor-pointer"
+          <div className="flex flex-col items-center gap-s32 px-s32 group cursor-pointer"
             onClick={() => handleOpen(caseStudies[1])}>
             <Image
               src={caseStudies[1].image}
@@ -87,7 +90,7 @@ export default function CaseStudy() {
               alt="Case study"
               width={280}
               height={380}
-              className="object-cover  w-[350px] md:w-[600px] lg:w-[700px]"
+              className="object-cover  w-[350px] md:w-[600px] lg:w-[700px] transition-transform duration-300 ease-out group-hover:-translate-y-2"
             />
 
             <Button variant="primary" onClick={() => handleOpen(caseStudies[1])}>
@@ -96,26 +99,26 @@ export default function CaseStudy() {
           </div>
 
           <p className="heading-h6 text-secondary max-w-xs lg:text-left">
-            {description}
+            Focused guidance to protect rights and ensure fair investigation in disputes. 
           </p>
         </div>
 
         {/* CASE 3 */}
         <div className="w-full max-w-5xl  bg-secondary-main rounded-r16 px-s24 py-s24 md:p-s64 flex flex-col items-center gap-s32">
 
-          <div className="w-full bg-gradient-to-b h-[250px] md:h-[600px] from-secondary-main to-background rounded-r16 px-s16  md:px-s64 pt-s64 flex justify-center hover:cursor-pointer"
+          <div className="w-full bg-gradient-to-b h-[250px] md:h-[600px] from-secondary-main to-background rounded-r16 px-s16  md:px-s64 pt-s64 flex justify-center group cursor-pointer"
             onClick={() => handleOpen(caseStudies[2])}>
             <Image
               src={caseStudies[0].image}
               alt="Case study"
               width={520}
               height={70}
-              className="object-cover object-top "
+              className="object-cover object-top transition-transform duration-300 ease-out group-hover:-translate-y-2"
             />
           </div>
           <div className="flex flex-col items-center gap-s16">
             <p className="heading-h6 text-secondary text-center max-w-lg">
-              {description}
+            Practical legal solutions to resolve disputes efficiently without long-term impact. 
             </p>
 
             <Button variant="primary" onClick={() => handleOpen(caseStudies[2])}>

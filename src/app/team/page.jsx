@@ -76,7 +76,7 @@ export default function OurTeam() {
               width={950}
               height={550}
               alt="pen"
-              className=" transfrom w-[150px]  md:w-[1500px] rotate-40 hidden justify-center lg:flex  lg:rotate-10"
+              className=" transfrom w-[150px]  md:w-[1500px]  rotate-40 hidden justify-center lg:flex  lg:rotate-0"
             />
             {/* STRING – Mobile & Tablet */}
             <div className="flex justify-center lg:hidden">
@@ -88,13 +88,7 @@ export default function OurTeam() {
 
                 className="absolute z-40 lg:hidden w-[250px] justify-center flex  lg:rotate-10"
               />
-              <Image
-                src={"/Images/mo8.png"}
-                width={1250}
-                height={150}
-                className="absolute w-[250px] h-[2760]   -translate-x-[8px] translate-y-[195px] mx-auto"
-                alt="decorative string mobile"
-              />
+        
             </div>
 
             {/* STRING – Desktop only */}
@@ -103,7 +97,7 @@ export default function OurTeam() {
                 src={"/Images/string-2.png"}
                 width={1250}
                 height={150}
-                className="absolute mx-auto h-[2400px] -translate-y-[25px]"
+                className="absolute mx-auto h-[2400px] z-0 translate-x-13 -translate-y-[22px]"
                 alt="decorative string desktop"
               />
             </div>
@@ -175,11 +169,11 @@ export default function OurTeam() {
           <header className="max-w-lg md:max-w-3xl my-[100px] lg:mt-[200px]">
             <p className="caption text-secondary">Our Team’s Approach</p>
 
-            <h2 className="heading-h2 text-accent-main">
+            <h2 className="heading-h2 text-accent-main sm:max-w-md lg:max-w-full">
               {practiceFlow.title}
             </h2>
 
-            <p className="heading-h6 text-secondary max-w-xl">
+            <p className="heading-h6 text-secondary max-w-lg">
               {practiceFlow.subtitle}
             </p>
           </header>
@@ -285,8 +279,7 @@ export default function OurTeam() {
       relative
     "
         >
-          {/* OPTIONAL DARK OVERLAY (REMOVE IF NOT NEEDED) */}
-          {/* <div className="absolute inset-0 bg-black/10" /> */}
+          
 
           {/* CONTENT */}
           <div
@@ -294,18 +287,19 @@ export default function OurTeam() {
         relative
         max-w-8xl
         mx-auto
-        px-s32 md:px-[100px]
-        pt-[50px]
+        px-s32 md:px-[70px]
+        bottom-20
+        gap-s64
         flex
         justify-between
         items-start
       "
           >
-            <p className="heading-h3 text-accent-main max-w-sm">
+            <p className="heading-h3 text-accent-main text-center max-w-[240px]">
               {trust.title}
             </p>
 
-            <p className="heading-h6 text-main max-w-sm">
+            <p className="heading-h6 text-main max-w-[300px]">
               {trust.description}
             </p>
           </div>

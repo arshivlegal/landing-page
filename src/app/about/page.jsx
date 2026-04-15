@@ -117,13 +117,66 @@ export default function AboutSection() {
         </div>
 
         {/* PROFILE IMAGE */}
+    <figure
+      className="
+        relative
+        w-full
+        max-w-[280px]
+        sm:max-w-[340px]
+        md:max-w-[380px]
+        lg:max-w-[420px]
+        aspect-[420/427]
+        rounded-r16
+        mx-auto
+      "
+    >
+      {/* FRAME BACKGROUND */}
+      <div
+        className="
+          absolute
+          inset-0
+          bg-[url('/Images/frame.svg')]
+          bg-no-repeat
+          bg-center
+          bg-contain
+          z-0
+        "
+      />
+    
+      {/* PERSON IMAGE */}
+      <div
+        className="
+          absolute
+          left-1/2
+          -translate-x-1/2
+    
+          /* vertical positioning */
+          -top-[35px]
+          xs:-top-[30px]
+          sm:-top-[36px]
+          md:-top-[25px]
+          lg:-top-[51px]
+    
+          /* responsive width */
+          w-[65%]
+          sm:w-[60%]
+          md:w-[55%]
+          lg:w-[85%]
+    
+          h-full
+          z-10
+        "
+      >
         <Image
-          src="/Images/aryan.png"
-          alt="Aryan Pandey"
-          width={356}
-          height={400}
-          className="w-full max-w-[280px] sm:max-w-[320px] rounded-r16 object-cover"
+          src="/Images/Group 1.png"
+          alt="Profile"
+          fill
+          className="object-contain scale-110"
+          sizes="(max-width: 640px) 70vw, (max-width: 1024px) 40vw, 260px"
+          priority
         />
+      </div>
+    </figure>
       </div>
          <div className="max-w-7xl mx-auto pb-[100px] md:pb-[200px] px-s16">
                      <GetInTouch

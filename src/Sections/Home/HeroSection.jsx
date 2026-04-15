@@ -2,9 +2,11 @@
 import Data from "@/Data/HomePage.json";
 import Button from "@/components/ui/Button";
 import { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
 
 export default function Hero() {
     const [supportsWebM, setSupportsWebM] = useState(false);
+    const router = useRouter();
     const isSafari =
         typeof window !== "undefined" &&
         /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
@@ -77,7 +79,7 @@ export default function Hero() {
 
 
             {/* -------------------- DESKTOP VIEW -------------------- */}
-            <div className=" min-h-screen hidden bg-gradient-to-r from-secondary-dark  to-background lg:flex   mx-auto items-center justify-between px-s48 py-48 md:p-s48">
+            <div className=" max-h-screen hidden bg-gradient-to-r from-secondary-dark  to-background lg:flex   mx-auto items-center justify-between px-s48 py-48 md:p-s48">
                 <div className="max-w-2xl space-y-s16">
                     <h1
                         className="heading-h1 text-primary-main"
@@ -88,9 +90,11 @@ export default function Hero() {
                     <p className="heading-h6 text-main">
                         {hero.subHeading}
                     </p>
-                    <Button children={hero.ctaButton} variant={"ctaAccent"} as="link" href="/contact-us" />
+                    <Button children={hero.ctaButton}   onClick={() => {
+          router.push("/contact-us?scroll=contact");
+        }} variant={"ctaAccent"} as="link"  />
                 </div>
-                <div className="relative w-[800px] aspect-[3/4] overflow-hidden">
+                <div className="relative w-[650px] aspect-[3/4] overflow-hidden">
                     {supportsWebM && !isSafari ? (
                         <video autoPlay loop muted playsInline preload="auto" className="hero-video">
                             <source src="/Images/hellfire.webm" type="video/webm" />

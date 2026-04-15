@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState,useRef } from "react";
 import Data from "@/Data/HomePage.json";
 import Button from "@/components/ui/Button";
 import ServiceCard from "@/Sections/Home/ServiceCard";
@@ -9,21 +9,40 @@ export default function ServicesSection() {
     // make sure the path exists in your data.json
     const { topHeading, arrow, tabs, ...laws } = Data.servicesSection;
     const [activeTab, setActiveTab] = useState(tabs?.[0]?.slug || "public-law");
+    const cardRef = useRef(null);
     // convert "criminal-law" → "criminalLaw"
     const toCamel = (slug) => slug.replace(/-([a-z])/g, (g) => g[1].toUpperCase());
     const selectedLaw = laws[toCamel(activeTab)] || Object.values(laws)[0] || {};
     // load matters from the global mapping (use uppercase title as your mapping key)
     const matters = services[selectedLaw.title?.toUpperCase()] || [];
+const handleTabClick = (slug) => {
+    setActiveTab(slug);
 
+    if (window.innerWidth < 768) {
+        setTimeout(() => {
+            const element = cardRef.current;
+            if (!element) return;
+
+            const yOffset = -90; // small offset (not full section)
+            const y =
+                element.getBoundingClientRect().top +
+                window.pageYOffset +
+                yOffset;
+
+            window.scrollTo({ top: y, behavior: "smooth" });
+        }, 100);
+    }
+};
     return (
-        <section className="max-w-7xl mx-auto bg-background p-s16 py-s64 space-y-[50px] md:py-[200px] md:space-y-[100px] rounded-r16">
+        <section   
+   className="max-w-7xl mx-auto bg-background p-s16 py-s64 space-y-[50px] md:py-[200px] md:space-y-[100px] rounded-r16">
             {/* HEADING */}
             <h2 className="heading-h2  text-center md:text-left md:pl-s24">
                 <span className="text-accent-main heading-h3 ">{arrow}</span> {topHeading}
             </h2>
             <div className="flex flex-col items-center gap-s24">
                 {/* DYNAMIC SERVICE CARD */}
-                <div className="w-full">
+                <div  ref={cardRef} className="w-full">
                     <ServiceCard
                         image={selectedLaw.image}
                         title={selectedLaw.title}
@@ -41,7 +60,7 @@ export default function ServicesSection() {
                                 <Button
                                     key={tab.slug}
                                     variant={activeTab === tab.slug ? "primary" : "outliner"}
-                                    onClick={() => setActiveTab(tab.slug)}
+                                 onClick={() => handleTabClick(tab.slug)}
                                     aria-pressed={activeTab === tab.slug}>
                                     {tab.label}
                                 </Button>

@@ -1,7 +1,7 @@
 {
-    "badge": "IMPORTANT: READ THIS BEFORE RESPONDING",
+    "badge": "IMPORTANT: READ THIS BEFORE TAKING ANY STEP ",
     "heading": "What Should You Do Now?",
-    "subHeading": "Before you reply, sign, or explain anything — pause. One wrong step can cost you more than you think.",
+    "subHeading": "If you're facing a legal issue, it's normal to feel confused or unsure.Before you reply, sign, or explain anything — just pause for a moment. ",
     "image": {
         "url": "/Images/library-01.webp",
         "alt": "Law books arranged on a wooden shelf"
@@ -9,34 +9,34 @@
     "warningBox": {
         "icon": "/Images/alert-icon.svg",
         "alt": "Law books arranged on a wooden shelf",
-        "title": "Anything you say or sign can be used against you.",
-        "description": "Even a quick reply, casual explanation, or “harmless” signature can weaken your position permanently."
+        "title": "ANYTHING YOU SAY OR SIGN CAN AFFECT YOUR CASE ",
+        "subDescription": "That’s why it’s important to understand things first — before you respond. "
     },
     "stepsTitle": "Your First Safe Steps",
     "steps": [
         {
             "icon": "/Images/stop-circle.svg",
             "alt": "Pause",
-            "title": "Pause",
-            "description": "Don’t reply, explain, or sign anything yet."
+            "title": "PAUSE",
+            "description": "Don’t rush into replying or reacting."
         },
         {
             "icon": "/Images/edit.svg",
             "alt": "Don’t Commit",
-            "title": "Don’t Commit",
-            "description": "No written and no verbal statements."
+            "title": "DON’T COMMIT YET ",
+            "description": "Avoid giving statements or signing anything without clarity."
         },
         {
             "icon": "/Images/call-incoming.svg",
             "alt": "Talk to an Expert",
-            "title": "Discuss with Expert",
-            "description": "Share everything with a legal expert."
+            "title": "TALK with Expert",
+            "description": "You can share your situation with us freely — we’ll guide you step by step. "
         },
         {
             "icon": "/Images/shield-tick.svg",
             "alt": "This Pause Protects You",
             "title": "This Pause Protects You",
-            "description": "Silence now can save you later."
+            "description": " A moment of clarity now can prevent bigger problems later. "
         }
     ],
     "faqs": [

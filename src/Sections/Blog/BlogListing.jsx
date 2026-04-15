@@ -361,7 +361,7 @@ safeIdleCallback(() => {
   // RENDER
   // ============================================
   return (
-    <div className="w-full">
+    <div className="w-full max-w-8xl mx-auto">
       {/* ERROR STATE */}
       {error && (
         <div className="bg-red-50 border border-red-200 rounded p-4 mb-4">

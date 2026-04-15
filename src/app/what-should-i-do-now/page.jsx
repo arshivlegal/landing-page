@@ -170,7 +170,10 @@ export default function WhatShouldIDo() {
                             </p>
 
                             <p className="text-sm font-primary md:text-2xl font-medium text-secondary">
-                                {warningBox.description}
+                                Even a quick reply, casual explanation, or a “harmless” signature can harm your position <span className="font-semibold text-main">when shared with the other party or authorities</span>. 
+                            </p>
+                            <p className="text-md">
+                              {warningBox.subDescription}
                             </p>
                         </div>
                     </div>

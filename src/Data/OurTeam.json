@@ -6,19 +6,19 @@
 
   "intro": {
     "heading": "A Professional Legal Team Focused on Clarity and Structured Guidance",
-    "description": "Arshiv Legal operates with a clear, disciplined approach to every matter. Our work combines careful legal assessment, responsible interpretation of statutes, and well-prepared procedural steps so clients always know where they stand and what comes next. "
+    "description": "Arshiv Legal follows a clear, disciplined approach to every matter, combining careful legal assessment, sound interpretation of statutes, and well-prepared procedural steps, guided through a central legal professional supported by a structured system that ensures every case is organised, reviewed, and procedurally aligned. "
   },
 
   "leadProfile": {
     "name": "Aryan Pandey",
     "role": "Aryan Pandey - Principal Legal Professional",
     "image": "/Images/ProfileLong-2.svg",
-    "description": "As the primary face of Arshiv Legal, he oversees the evaluation of matters, examines factual positions, and interprets legal questions with precision, ensuring clients receive structured and dependable guidance."
+    "description": "As the primary face of Arshiv Legal, he handles case evaluation, examines facts, and interprets legal issues with precision, combining legal analysis and procedural awareness to deliver structured and dependable guidance. "
   },
 
   "practiceFlow": {
     "title": "How the Practice Functions",
-    "subtitle": "Before we reply, sign, or explain anything — pause. One wrong step can cost you more than you think.",
+    "subtitle": "While clients interact primarily with the principal professional, the overall system is designed to function like a coordinated legal setup. ",
     "steps": [
       {
         "title": "Direct Client Guidance",
@@ -34,7 +34,7 @@
       }
     ]
   },
-  "note":"We Are Trusted By Our Clients For Effective And Clear Solutions",
+  "note":"Providing clarity in your matter is our priority",
 
   "trust": {
     "title": "We Are Trusted By Our Clients For Effective And Clear Solutions",

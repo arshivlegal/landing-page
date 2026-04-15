@@ -15,6 +15,7 @@ export default function ServiceCard({
             className="max-w-5xl mx-auto flex flex-col lg:flex-row justify-center gap-s16">
             {/* LEFT IMAGE */}
             <div
+             
                 className="lg:w-1/3 aspect-video overflow-hidden rounded-r16">
                 <Image
                     src={image}

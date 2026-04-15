@@ -33,7 +33,7 @@ export default function Page() {
 
   return (
     <main className="w-full bg-background  ">
-      <Gradient title={"Daily Legal Content"} description={"With clear legal insight and swift, reliable guidance, Arshiv Legal helps you act early — while the case is still in your hands and your options are open."} />
+      <Gradient title={"Daily Legal Content"} description={"Understand the law as it actually applies to you with legal insights that keep things clear. "} />
 
       <div className=''>
 
