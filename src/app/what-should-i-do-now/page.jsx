@@ -15,6 +15,7 @@ import {
   getOrganizationSchema,
 } from "@/utils/schema";
 
+
 export const revalidate = 60;
 
 export const metadata = {
@@ -172,7 +173,7 @@ export default function WhatShouldIDo() {
                             <p className="text-sm font-primary md:text-2xl font-medium text-secondary">
                                 Even a quick reply, casual explanation, or a “harmless” signature can harm your position <span className="font-semibold text-main">when shared with the other party or authorities</span>. 
                             </p>
-                            <p className="text-md">
+                            <p className="text-xs md:text-sm">
                               {warningBox.subDescription}
                             </p>
                         </div>

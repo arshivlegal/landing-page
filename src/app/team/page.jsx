@@ -57,7 +57,7 @@ export default function OurTeam() {
         </figure>
       </header>
 
-      <section className="min-h-screen relative flex flex-col px-s24 justify-center gap-20 bg-secondary-main items-center bg-[url('/Images/pattern.png')] bg-center ">
+      <section className="min-h-screen relative flex flex-col px-s24 justify-center gap-8 md:gap-20 bg-secondary-main items-center bg-[url('/Images/pattern.png')] bg-center ">
 
         <Image
           src="/Images/cap.png"
@@ -164,7 +164,7 @@ export default function OurTeam() {
 
 
       <section className="relative lg:mb-[900px] mx-auto">
-        <div className="max-w-7xl mx-auto px-s32 py-[150px] md:pt-[250px]">
+        <div className="max-w-7xl mx-auto px-s32 py-[10px] xl:pt-[250px]">
 
           <header className="max-w-lg md:max-w-3xl my-[100px] lg:mt-[200px]">
             <p className="caption text-secondary">Our Team’s Approach</p>
@@ -235,7 +235,7 @@ export default function OurTeam() {
               );
             })}
 
-            <p className="col-span-full mx-auto text-center caption text-accent-main mt-s64">
+            <p className="col-span-full mx-auto text-center caption text-accent-main ">
               {note}
             </p>
           </div>

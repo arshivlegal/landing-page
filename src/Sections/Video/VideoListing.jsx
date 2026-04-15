@@ -407,7 +407,7 @@ export default function VideoListingPage({ searchQuery = "", onClearSearch }) {
   // RENDER
   // ============================================
   return (
-    <main className="w-full max-w-8xl mx-auto">
+    <main className="w-full max-w-7xl mx-auto">
       {/* ERROR STATE */}
       {error && (
         <div className="bg-red-50 border border-red-200 rounded p-4 mb-4">
@@ -423,7 +423,7 @@ export default function VideoListingPage({ searchQuery = "", onClearSearch }) {
         <div >
           <span
             onClick={handleBack}
-            className="text-accent-main cursor-pointer hover:underline pl-s24"
+            className="text-accent-main cursor-pointer hover:underline "
           >
             ← Back
           </span>
@@ -469,7 +469,7 @@ export default function VideoListingPage({ searchQuery = "", onClearSearch }) {
 
       {/* GRID */}
       {items.length > 0 && !isSearching && (
-        <div className="w-full grid gap-x-s64 py-s64 gap-y-s64 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 justify-items-center">
+        <div className="w-full grid gap-x-s40 py-s32 gap-y-s40 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 justify-items-center">
           {items.map((item) => (
             <div
               key={item._id}

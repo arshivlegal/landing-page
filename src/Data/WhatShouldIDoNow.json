@@ -17,19 +17,19 @@
         {
             "icon": "/Images/stop-circle.svg",
             "alt": "Pause",
-            "title": "PAUSE",
+            "title": "Pause",
             "description": "Don’t rush into replying or reacting."
         },
         {
             "icon": "/Images/edit.svg",
             "alt": "Don’t Commit",
-            "title": "DON’T COMMIT YET ",
+            "title": "Don’t Commit",
             "description": "Avoid giving statements or signing anything without clarity."
         },
         {
             "icon": "/Images/call-incoming.svg",
             "alt": "Talk to an Expert",
-            "title": "TALK with Expert",
+            "title": "Discuss with Expert",
             "description": "You can share your situation with us freely — we’ll guide you step by step. "
         },
         {

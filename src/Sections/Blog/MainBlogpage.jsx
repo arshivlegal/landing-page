@@ -33,7 +33,20 @@ export default function Page() {
 
   return (
     <div className="w-full ">
-      <Gradient title={"Blog"} description={"Deep dive into legal topics and understand the laws that actually apply in daily life."} />
+             <div
+            className="
+    w-full mt-[66px] md:mt-[83px] py-[50px] md:pt-[100px] md:pb-s32
+    bg-secondary-main
+    flex items-center justify-center
+    "
+        >
+            <section className="max-w-7xl flex flex-col px-s32 gap-s16 md:gap-s24 mx-auto text-center ">
+                <h1 className="text-3xl leading-tight  font-bold md:text-5xl md:leading-relaxed font-primary  text-primary-main">
+                  Blog
+                </h1>
+                <p className='text-sm md:text-lg md:font-medium md:leading-relaxed text-center text-main max-w-3xl mx-auto'>Deep dive into legal topics and understand the laws that actually apply in daily life.</p>
+            </section>
+        </div>
       <div className='pb-s40 md:pb-s48 lg:pb-s64  md:px-0 '>
 
         <div className=" bg-secondary-main mb-s16 px-s24 pb-[50px]">
