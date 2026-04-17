@@ -56,7 +56,15 @@ export default function Navbar() {
         >
 
             {/* LOGO */}
-            <Link href="/" className="shrink-0" onClick={()=>{window.location.reload()}}>
+            <Link 
+             href="/"
+  className="shrink-0"
+  onClick={(e) => {
+    if (pathname === "/") {
+      e.preventDefault();
+      window.location.reload();
+    }
+  }} >
                 <Image
                     src="/logo.svg"
                     alt="Logo"
